@@ -1,0 +1,92 @@
+body {
+  margin: auto;
+  height: 60px;
+  font-family: Arial;
+  color: black;
+  background-color: white;
+  padding-right: 40px;
+  padding-left: 50px;
+}
+
+body, h1, footer {
+  width: 800px;
+}
+
+header {
+  height: 15em;
+  background-color: #ebebeb;
+  padding-left: 40px;
+}
+
+#mySketch {
+
+}
+
+article {
+  position: fixed;
+  top: 30px;
+}
+
+article, h2 {
+  text-align: left;
+}
+
+header h1 {
+  font-size: 36px;
+  line-height: 200px;
+  text-align: left;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h1, h2, a, li {
+  text-transform: uppercase;
+}
+
+main {
+  margin-top: 30px;
+}
+
+section {
+  margin-left: 6px;
+  margin-bottom: 60px;
+  padding: 20px;
+  float: left;
+  width: 210px;
+}
+
+h2 {
+  padding-bottom: 15px;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00271F;
+  text-decoration: underline;
+}
+
+ol, ul {
+  padding-left: 20px;
+}
+
+footer {
+  clear: both;
+  position: fixed;
+  bottom: 0px;
+  height: 20px;
+  font-size: 10px;
+  padding: 15px 5px 7px 5px;
+  color: #346588;
+  background-color: #ebebeb;
+  text-align: center;
+}
+
+footer a {
+  color: #557555;
+}
