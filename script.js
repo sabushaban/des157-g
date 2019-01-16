@@ -37,10 +37,10 @@ function draw() {
   }
 }
 
-void mouseIsPressed() {
+function mouseIsPressed() {
   background(random(25, 311));
 }
-void keyPressed() {
+function keyPressed() {
   if (keyCode == ENTER) {
     tricolor = 255;
   }
