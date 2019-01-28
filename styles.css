@@ -15,10 +15,12 @@ body, h1, footer {
 header {
   height: 15em;
   background-color: #ebebeb;
-  padding-left: 40px;
 }
 
 #mySketch {
+  height: 15em;
+  margin-right: 30em;
+  background-color: #ebebeb;
 
 }
 
