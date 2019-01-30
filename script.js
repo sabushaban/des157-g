@@ -40,6 +40,7 @@ function draw() {
 function mouseIsPressed() {
   background(random(25, 311));
 }
+
 function keyPressed() {
   if (keyCode == ENTER) {
     tricolor = 255;

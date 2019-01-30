@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 1000px; /* only for codepen */
+  /*background: linear-gradient(205deg, #333, indigo);*/
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: antiquewhite;
+}
+
+h1 {
+  min-width: 700px; /* prevents text from breaking */
+  margin-bottom: -0.22em;
+  margin-left: 14%;
+  font-family: "Lobster", cursive;
+  font-size: 3.5em;
+  font-weight: normal;
+  color: deeppink;
+}
+
+#formSection {
+  width: 50%;
+  min-width: 300px;
+  padding: 3%;
+  border-radius: 18px;
+  margin-left: 12%;
+  background-color: #222;
+  color: antiquewhite;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: center;
+  grid-gap: 1%;
+  width: 90%;
+  padding: 1em;
+  border: 0; /* remove default */
+  margin-bottom: 0;
+}
+
+fieldset > label {
+  text-align: left;
+  align-self: center;
+  margin-left:10%
+}
+form fieldset:last-child div {
+  grid-column-start: 2;
+
+}
+
+input[type="text"] {
+  width: 90%;
+  max-width: 5in;
+  min-width: 200px;
+  padding: 4%;
+  border: none; /*remove default*/
+  border-radius: 3px;
+  border-bottom: 8px deeppink solid;
+  font-weight: bold;
+  font-size: 1.5em;
+  background-color: hotpink;
+  color: antiquewhite;
+}
+
+input[type="text"]:focus {
+  border-bottom: 8px purple solid;
+  background-color: antiquewhite;
+  color: black;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 30%;
+  min-width: 100px;
+  padding: 10px;
+  border: 0px;
+  border-radius: 4px;
+  margin: 1% 1% 1% 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  background: orange;
+  color: #333;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background: purple;
+  color: white;
+}
+
+#msgSection {
+  width: 50%;
+  min-width: 300px;
+  padding: 2em;
+  margin: 1% 12%;
+  border-radius: 12px;
+  background-color: lightblue;
+}
