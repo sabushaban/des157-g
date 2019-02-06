@@ -6,13 +6,13 @@
   <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
-<title> Madlibs</title> 
+  <title> Madlibs</title>
 </head>
 
 <body>
 
   <header>
-    <h1>Your Favorite Pet</h1>
+    <h1>What's Your Story Book</h1>
   </header>
   <main>
 
@@ -20,28 +20,32 @@
       <form>
 
         <fieldset>
-          <label for="breed">What is your favorite breed?</label>
-          <input type="text" name="pet" id="pet" required>
+          <label for="firstL">First Letter of name.</label>
+          <input type="text" name="firstL" id="firstL" required>
 
-          <label for="color">color</label>
-          <input type="text" name="color" id="color" required>
+          <label for="last">First Letter of Last name.</label>
+          <input type="text" name="last" id="last" required>
 
           <label for="age">age</label>
           <input type="text" name="age" id="age" required>
 
         </fieldset>
 
-        <fieldset>
-          <div>
-            <input type="submit" value="Submit" id="s"/>
-            <input type="reset" value="Reset"/>
+          <fieldset>
+            <div>
+              <input type="submit" value="Submit" id="s"/>
+              <input type="reset" value="Reset"/>
           </div>
-        </fieldset>
+
+          </fieldset>
+
       </form>
+
     </section>
 
     <section id="msgSection">
       <p id="myMsg"></p>
+      
     </section>
 
   </main>

@@ -3,21 +3,21 @@
 }
 
 body {
-  height: 1000px; /* only for codepen */
-  /*background: linear-gradient(205deg, #333, indigo);*/
+  height: 1000px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 100%;
   background-color: #00343c;
+  color:black;
 }
 
 h1 {
-  min-width: 700px; /* prevents text from breaking */
+  min-width: 700px;
   margin-bottom: -0.22em;
   margin-left: 14%;
   font-family:  fantasy, cursive;
   font-size: 3.5em;
   font-weight: normal;
-  color: #006562;
+ color: #209987;
 }
 
 #formSection {
@@ -36,7 +36,7 @@ fieldset {
   grid-gap: 1%;
   width: 90%;
   padding: 1em;
-  border: 0; /* remove default */
+  border: 0;
   margin-bottom: 0;
 }
 
@@ -53,8 +53,9 @@ form fieldset:last-child div {
 input[type="text"]:focus {
   border-bottom: 8px green solid;
   background-color: white;
-  color: white;
+  color: black;
 }
+
 
 input[type="submit"],
 input[type="reset"] {
@@ -82,15 +83,16 @@ input[type="reset"]:hover {
   padding: 2em;
   margin: 1% 12%;
   background-color: lightblue;
+
 }
 
 footer {
   clear: both;
   position: fixed;
-  bottom: 5px;
-  height: 10px;
+  bottom: 15px;
+  height: 15px;
   font-size: 10px;
-  padding: 30px 5px 7px 5px;
+  padding: 15px 5px 15px 5px;
   color: #346588;
   background-color: #ebebeb;
   text-align: center;
