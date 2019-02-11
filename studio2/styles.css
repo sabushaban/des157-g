@@ -56,7 +56,10 @@ section {
 section {
   font-size: 2em;
 }
-
+p{
+  text-align: center;
+  font-size: .5em;
+}
 #overlay, #overlay1 {
   position: absolute;
   top: 0;

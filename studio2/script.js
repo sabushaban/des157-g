@@ -22,6 +22,6 @@ lipstick.addEventListener('click', function() {
   overlay1.style.display = 'block';
 })
 
-close.addEventListener('click', function() {
+lipstickclose.addEventListener('click', function() {
   overlay1.style.display = 'none';
 })
