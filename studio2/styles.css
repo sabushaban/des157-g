@@ -5,6 +5,12 @@ body {
   margin:auto;
   font-family: monospace;
 }
+header{
+  text-align: center;
+  font-size: 5em;
+  height: auto;
+}
+
 #phone, #lipstick, #usb {
   display: flex;
   flex-direction: row;
