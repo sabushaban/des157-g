@@ -1,4 +1,15 @@
 body {
   background-image: url("images/pattern.jpg");
   background-repeat: repeat;
+  width: auto;
+  margin:auto;
+  font-family: monospace;
+}
+#phone, #lipstick, #usb {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 1em;
+  justify-content: center;
+  align-content: center;
 }
