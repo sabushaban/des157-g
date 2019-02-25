@@ -6,7 +6,7 @@ var tricolor = 255;
 function setup() {
   // size in Processing is createCanvas in p5
   // capture the canvas into a var
-  var myCanvas = createCanvas(800, 250);
+  var myCanvas = createCanvas(800, 900);
   // connect myCanvas in js to mySketch in html
   myCanvas.parent('mySketch');
   background(255);
