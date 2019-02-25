@@ -2,15 +2,16 @@ console.log('reading js');
 
 var brushSize = 150;
 var tricolor = 255;
-var mic;
+//var mic;
 
 function setup() {
+  //mic = new p5.AudioIn();
+  //mic.start();
   // size in Processing is createCanvas in p5
   // capture the canvas into a var
   var myCanvas = createCanvas(800, 900);
   // connect myCanvas in js to mySketch in html
-  mic = new p5.AudioIn();
-  mic.start();
+
   myCanvas.parent('mySketch');
   background(255);
 }
@@ -21,11 +22,11 @@ function draw() {
   // fill(#25d454);
   // }
   //stroke(0);
+  //var vol = mic.getLevel();
+  //console.log(vol);
+  //micLevel = mic.getLevel();
+  //ellipse(width / 2, constrain(height - micLevel * height * 5, 0, height), 10, 10);
 
-  background(0);
-  micLevel = mic.getLevel();
-  ellipse(width / 2, constrain(height - micLevel * height * 5, 0, height), 10, 10);
-}
 
 if (mouseIsPressed) {
   fill(tricolor, 90, 290, 70);
