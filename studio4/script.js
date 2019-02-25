@@ -29,7 +29,7 @@ function draw() {
 
 
 if (mouseIsPressed) {
-  fill(tricolor, 90, 290, 70);
+  fill(random(7,90),random(150,90),random(90,120),200);
   //triangle(mouseX, mouseY, mouseY, brushSize, brushSize, brushSize);
   triangle(mouseX, mouseY, mouseY, brushSize, mouseX, brushSize);
 } else {
