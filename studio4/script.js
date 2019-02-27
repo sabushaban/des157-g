@@ -9,7 +9,7 @@ function setup() {
   //mic.start();
   // size in Processing is createCanvas in p5
   // capture the canvas into a var
-  var myCanvas = createCanvas(800, 900);
+  var myCanvas = createCanvas(800, 700);
   // connect myCanvas in js to mySketch in html
 
   myCanvas.parent('mySketch');
@@ -22,28 +22,29 @@ function draw() {
   // fill(#25d454);
   // }
   //stroke(0);
+
   //var vol = mic.getLevel();
   //console.log(vol);
   //micLevel = mic.getLevel();
   //ellipse(width / 2, constrain(height - micLevel * height * 5, 0, height), 10, 10);
 
 
-if (mouseIsPressed) {
-  fill(random(7,90),random(150,90),random(90,120),200);
-  //triangle(mouseX, mouseY, mouseY, brushSize, brushSize, brushSize);
-  triangle(mouseX, mouseY, mouseY, brushSize, mouseX, brushSize);
-} else {
-  noFill();
-  //ellipse(mouseX, mouseY, brushSize, brushSize);
-
   if (mouseIsPressed) {
-    stroke(255);
+    fill(random(7, 90), random(150, 90), random(90, 120), 200);
+    //triangle(mouseX, mouseY, mouseY, brushSize, brushSize, brushSize);
+    triangle(mouseX, mouseY, mouseY, brushSize, mouseX, brushSize);
   } else {
-    stroke(0);
+    noFill();
+    //ellipse(mouseX, mouseY, brushSize, brushSize);
+
+    if (mouseIsPressed) {
+      stroke(255);
+    } else {
+      stroke(0);
+    }
+    line(mouseX - 66, mouseY, mouseX + 66, mouseY);
+    //line(mouseX, mouseY-66, mouseX, mouseY+66);
   }
-  line(mouseX - 66, mouseY, mouseX + 66, mouseY);
-  //line(mouseX, mouseY-66, mouseX, mouseY+66);
-}
 }
 
 function mouseIsPressed() {
