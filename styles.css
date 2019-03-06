@@ -1,93 +1,32 @@
 body {
-  margin: auto;
-  height: 60px;
-  font-family: Arial;
-  color: black;
-  background-color: white;
-  padding-right: 40px;
-  padding-left: 50px;
-}
-
-body, h1, footer {
-  width: 800px;
-}
-
-header {
-  height: 15em;
-  background-color: #ebebeb;
-  color: #ffffff;
-}
-
-#mySketch {
-  height: 15em;
-  margin-right: 30em;
-  background-color: #ebebeb;
+  text-align: center;
+  font-family: inherit;
 
 }
-
-article {
-  position: fixed;
-  top: 30px;
+img{
+  width: auto;
+  height: 500px;
 }
-
-article, h2 {
-  text-align: left;
+section{
+  display: block;
+width: 800px;
+margin: auto;
+justify-content: space-between;
 }
-
-header h1 {
-  font-size: 36px;
-  line-height: 200px;
-  text-align: left;
+p{
+  display: flex;
 }
-
-h1 {
-  font-size: 30px;
-}
-
-h1, h2, a, li {
-  text-transform: uppercase;
-}
-
-main {
-  margin-top: 30px;
-}
-
-section {
-  margin-left: 6px;
-  margin-bottom: 60px;
-  padding: 20px;
-  float: left;
-  width: 210px;
-}
-
-h2 {
-  padding-bottom: 15px;
-}
-
-a {
-  color: red;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #00271F;
-  text-decoration: underline;
-}
-
-ol, ul {
-  padding-left: 20px;
-}
-
 footer {
   clear: both;
   position: fixed;
+text-align: center;
   bottom: 0px;
   height: 20px;
   font-size: 10px;
   padding: 15px 5px 7px 5px;
   color: #346588;
   background-color: #ebebeb;
-  text-align: center;
+
 }
 
 footer a {
