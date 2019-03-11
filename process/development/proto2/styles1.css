@@ -22,9 +22,11 @@ h1 {
   position: fixed;
   top: 15px;
   right: 7em;
+  left:1em;
   font-size: 60px;
   font-family: monospace;
   color: white;
+  background-color: rgba(249, 53, 229, 0.71);
 }
 p{
   position: fixed;
