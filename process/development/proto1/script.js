@@ -1,4 +1,5 @@
-var w = c.width = window.innerWidth,
+var
+  w = c.width = window.innerWidth,
   h = c.height = window.innerHeight,
   ctx = c.getContext('2d'),
   opts = {
@@ -9,9 +10,21 @@ var w = c.width = window.innerWidth,
     addedSpeed: 4,
     colors: ['hsla(20,80%,50%,.5)', 'hsla(210,80%,50%,.5)']
   },
-
-particles = [],
+//   button =document.querySelector('button');
+  particles = [],
   tick = 0;
+//
+//   button.addEventListener ('mouseover', function() {
+//   button.style.backgroundColor='yellow';
+//   button.innerHTML='haha';
+// });
+// button.addEventListener('mouseout',mouseWentOut);
+// function mouseWentOut(){
+//    button.style.background='orange';
+//    button.innerHTML='hehe';
+// }
+// button.addEventListener('mouseClicked',mouseClicked)
+
 
 function Particle() {
 

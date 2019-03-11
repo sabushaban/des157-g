@@ -55,6 +55,19 @@ a:hover {
   color: #333;
   display: none;
 }
+#c{
+background: white;
+}
+/* button {
+  width:33%;
+  height:5em;
+  border-radius:14px;
+  border:0;
+  font-size:3em;
+  font-weight:bold;
+  background-color:orange;
+  color:#222;
+} */
 
 #home {
   background-color: #ffc9eb;
