@@ -1,3 +1,6 @@
+console.log("reading js");
+
+("use strict");
 var
   w = c.width = window.innerWidth,
   h = c.height = window.innerHeight,
