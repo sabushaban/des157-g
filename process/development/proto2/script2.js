@@ -2,21 +2,18 @@ console.log("reading js");
 
 ("use strict");
 
-var button;
-
-  button =document.querySelector('button');
-
-  button.addEventListener ('mouseover', function() {
-  button.style.backgroundColor='#c7007d';
-  button.innerHTML='TALK';
-});
-button.addEventListener('mouseout',mouseWentOut);
-function mouseWentOut(){
-   button.style.background='white';
-   button.innerHTML='START';
-}
-button.addEventListener('mouseClicked',mouseClicked)
-
+/**
+ *  Adapted from Daniel Shiffman
+ *  learningprocessing.com
+ *
+ *  When level exceeds a threshold, trigger some action.
+ *
+ *  Then, increase the overall threshold by adding an additional cutoff value.
+ *
+ *  The cutoff decays every frame by a decay rate, so a beat can
+ *  be triggered again.
+ *
+ */
 
 var input
 
