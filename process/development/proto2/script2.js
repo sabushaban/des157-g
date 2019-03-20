@@ -15,13 +15,13 @@ console.log("reading js");
  *
  */
 
-var input
+var canvas;
 
 var threshold = .1;
 var cutoff = 0;
 var decayRate = 0.5;
 
-var day =document.querySelector('#day');
+canvas =document.querySelector('canvas');
 function setup() {
   createCanvas(910, 895);
   background(255);

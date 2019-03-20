@@ -2,31 +2,13 @@ console.log("reading js");
 
 ("use strict");
 
-var button;
 
-  button =document.querySelector('button');
+var threshold = 0;
+var cutoff = -.10;
+var decayRate = -.20;
 
-  button.addEventListener ('mouseover', function() {
-  button.style.backgroundColor='#c7007d';
-  button.innerHTML='TALK';
-});
-button.addEventListener('mouseout',mouseWentOut);
-function mouseWentOut(){
-   button.style.background='white';
-   button.innerHTML='START';
-}
-button.addEventListener('mouseClicked',mouseClicked)
-
-
-var input
-
-var threshold = 0.1;
-var cutoff = 0;
-var decayRate = 0.95;
-
-var day =document.querySelector('#day');
 function setup() {
-  createCanvas(710, 200);
+  createCanvas(2000,650);
   background(255);
 
   // Create an Audio input
@@ -36,33 +18,37 @@ function setup() {
 
 function draw() {
   // Get the overall volume (between 0 and 1.0)
+  var canvas;
+  canvas = document.querySelector('canvas');
+  console.log("canvas");
   var volume = input.getLevel();
 
   // If the volume > threshold + cutoff, a rect is drawn at a random location.
   // The louder the volume, the larger the rectangle.
   if (volume > threshold + cutoff) {
-    stroke(0);
-    fill(0, 100);
-    rect(random(40, width), random(height), volume*50, volume*50);
+    noStroke();
+    fill(random(0,69),random(300),90);
+    rect(random(40, width), random(height), volume * 80, volume * 80);
 
     // increase the cutoff
-    cutoff = 0.5;
+    cutoff = 0.1;
   }
 
   //
-  cutoff = cutoff * decayRate;
+  cutoff = cutoff * threshold;
 
   // Graph the overall potential volume, w/ a line at the threshold
-  var y = map(volume, 0, 1, height, 0);
+  var y = map(volume, 0, .5, height, .4);
   var ythreshold = map(threshold + cutoff, 0, 1, height, 0);
 
   noStroke();
-  fill(175);
+  fill(random(175,7,23),random(30,120,90),10);
   rect(0, 0, 20, height);
+  ellipse(random(90, width), random(height), volume * 30, volume * 30);
 
   // Then draw a rectangle on the graph, sized according to volume
   fill(0);
   rect(0, y, 20, y);
   stroke(0);
-  line(0, ythreshold, 19, ythreshold);
+  line(0, ythreshold, 9, ythreshold);
 }
