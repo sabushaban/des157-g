@@ -7,7 +7,7 @@ var cutoff = -.10;
 var decayRate = -.20;
 
 function setup() {
-  createCanvas(1400,650);
+  createCanvas(1400, 650);
   background(219, 246, 255);
 
   input = new p5.AudioIn();
@@ -23,7 +23,7 @@ function draw() {
 
   if (volume > threshold + cutoff) {
     noStroke();
-    fill(random(214, 49, 247),random(0, 232, 255),200);
+    fill(random(214, 49, 247), random(0, 232, 255), 200);
     rect(random(40, width), random(height), volume * 80, volume * 80);
     ellipse(random(90, width), random(height), volume * 30, volume * 30);
 
@@ -34,10 +34,10 @@ function draw() {
   cutoff = cutoff * threshold;
 
   var y = map(volume, 0, .5, height, .4);
-  var ythreshold = map(threshold + cutoff, 0, 1, height, 0);
+  var ythreshold = map(threshold + cutoff + decayRate, 0, 1, height, 0);
 
   noStroke();
-  fill(random(185,7,273),random(30,220,190),190);
+  fill(random(185, 7, 273), random(30, 220, 190), 190);
   rect(0, 0, 20, height);
   ellipse(random(90, width), random(height), volume * 30, volume * 30);
 
